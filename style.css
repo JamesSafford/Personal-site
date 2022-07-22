@@ -3,19 +3,24 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-perspective: 1000;
+  background-size: auto;
+
 }
 
-body {
+section {
   font-family: 'Manrope', sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   perspective: 1000px;
+  flex-direction: column;
+  position: relative;
 }
 
 .container {
   width: 50%;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +28,12 @@ body {
 
 .card {
   transform-style: preserve-3d;
-  min-height: 95vh;
+  height: 650px;
   width: 35rem;
   border-radius: 20px;
   padding: 0rem 5rem;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
-
-/* // on large monitor min height needs to be 70vh, on mac screen 95vh */
 
 .image {
   min-height: 35vh;
@@ -58,7 +61,7 @@ body {
 }
 
 .info h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 2rem;
   text-align: center;
   transition: all 0.75s ease-out;
@@ -90,4 +93,163 @@ body {
 
 .social-buttons a:hover {
   color: #000000;
+}
+
+/* Case studies */
+
+section.experience {
+  background: linear-gradient(to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75));
+  background-blend-mode: difference;
+  background-size: auto;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  section.experience {
+    padding: 0 0 50px 0;
+  }
+}
+
+section.experience div.work {
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 1150px) {
+  section.experience div.work {
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.experience div.work {
+    max-width: 80vw;
+    margin: 50px 0 0 0;
+    padding: 5vh 0 0 0;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+
+section.experience div.caseStudy {
+  width: 488px;
+  margin: 0 0 32px 0;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+section.experience div.caseStudy div.studyImage {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 8px;
+}
+
+section.experience div.caseStudy h4 {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+section.experience div.caseStudy p {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  line-height: 150%;
+}
+
+section.experience div.caseStudy p.meta {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 18px 0 4px 0;
+  /* identical to box height */
+}
+
+section.experience div.caseStudy a {
+  text-decoration: none;
+  color: #828282;
+  position: relative;
+  font-family: "Space Mono", monospace;
+}
+
+section.experience div.caseStudy .studyInfo {
+  margin: 0 0 48px 0;
+}
+
+section.experience div.caseStudy .logo {
+  padding-top: 20px;
+  height: 35px;
+}
+
+section.experience div.caseStudy .studyFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+}
+
+
+.modal {
+  background-color: #fff;
+  /* padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  max-width: 100%;
+  text-align: center; */
+}
+
+
+.open-button {
+  background-color: rgba(8, 83, 156, 0.75);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 15px
+}
+
+@media only screen and (max-width: 1150px) {
+  section.experience div.caseStudy {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.experience div.caseStudy {
+    margin: 0 0 60px 0;
+  }
+
+  section.experience div.caseStudy div.studyImage {
+    height: 240px;
+  }
+
+  section.experience div.caseStudy div.studyFooter {
+    flex-direction: column;
+  }
+
+  section.experience div.caseStudy div.studyFooter p {
+    margin: 0;
+  }
 }
