@@ -1,18 +1,6 @@
-// const modalContainer = document.getElementById('.modal');
-// const openModal = document.querySelector('.open-button');
-// const closeModal = document.querySelector('.close-button');
-
 const modalContainers = document.getElementsByClassName('modal');
 const openModalButtons = document.getElementsByClassName('open-button');
 const closeModalButtons = document.getElementsByClassName('close-button');
-
-// openModalButtons.(button => {
-//   button.addEventListener('click', () => {
-//     const dialog = button.nextElementSibling
-//   })
-// }
- 
-// );
 
 for (i = 0; i < openModalButtons.length; i++) {
   button = openModalButtons[i];
