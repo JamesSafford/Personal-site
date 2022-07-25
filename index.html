@@ -12,29 +12,38 @@
 
 </head>
 <body>
+
+  <!-- Feature -->
   <section class="personalCard">
-  <div class="container">
-    <div class="card">
-      <div class="image">
-        <div class="circle"></div>
-        <img src="./person.svg" alt="person">
-      </div>
-      <div class="info">
-        <h1 class="title">Come say hi &#128075</h1>
-        <h3>Get in touch via these links.</h3>
-        <div class="social-buttons">
-          <a href="https://github.com/JamesSafford" target=”_blank”><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:jamesfsafford@gmail.com" target=”_blank”><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/james-safford/" target=”_blank”><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/Jim_Safford" target=”_blank”><i class="fa-brands fa-twitter"></i></a>     
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <div class="circle"></div>
+          <img src="./person.svg" alt="person">
+        </div>
+        <div class="info">
+          <h1 class="title">Hey, I'm Jim &#128075</h1>
+          <h3>say hello or check out my work below &#128071 </h3>
+
         </div>
       </div>
     </div>
-  </div>
-  <script src="./card-animation.js"></script>
-</section>
+    <script src="js/card-animation.js"></script>
+    <!-- Feature -->
+    
+    <div class="links">
+      <div class="social-buttons">
+        <li><a href="https://github.com/JamesSafford" target=”_blank”><i class="fa-brands fa-github"></i> See my work on GitHub</a></li>
+        <li><a href="mailto:jamesfsafford@gmail.com" target=”_blank”><i class="fa-solid fa-envelope"></i> Drop me an email</a></li>
+        <li><a href="https://www.linkedin.com/in/james-safford/" target=”_blank”><i class="fa-brands fa-linkedin-in"> Connect on LinkedIn</i></a></li>
+        <li><a href="https://twitter.com/Jim_Safford" target=”_blank”><i class="fa-brands fa-twitter"></i> Follow me on Twitter</a></li>
+      </div>
+    </div>
+  </section>
 
+  <!-- Project gallery -->
   <section class="experience">
+    <h2>Here's a snapshot of my previous experiences</h2>
   <div class="work">
     <div class="caseStudy">
       <div class="studyImage" style="background-image:url(/assets/address-history.png);"></div>
@@ -45,8 +54,16 @@
       </div>
       <div class="studyFooter">
           <p>Product Manager</p>
+          <button class="button open-button">tell me more</button>      
+          <dialog class="modal modal0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra posuere ipsum, a dictum nulla interdum in. Pellentesque porta, ipsum a ornare semper, nibh mi ornare sem, ut tincidunt lectus odio quis diam. Sed mauris lectus, convallis vel ante at, pharetra accumsan mauris. Nullam mollis, ex sed fermentum auctor, purus metus hendrerit risus, eu vehicula lacus tellus mollis orci. Etiam id lorem tortor. Aenean vel massa volutpat, rhoncus turpis vel, imperdiet erat. Integer vestibulum ex a arcu porttitor, nec semper leo scelerisque. Curabitur interdum eros sem, ut volutpat nisl rutrum a. Ut eu egestas velit, vitae imperdiet turpis. Donec vitae elit ut nibh mollis euismod ut et odio. Phasellus in facilisis lorem. Pellentesque at ex rhoncus, egestas mauris eget, volutpat ex. Donec placerat porta nisi in semper. Proin a dui sollicitudin, rutrum sem et, tempor quam. Quisque bibendum rutrum mauris at rutrum. Nam viverra nulla sed finibus malesuada.
+
+            </p>
+            <button class="button close-button">take me back</button>
+          </dialog>
       </div>
     </div>
+
     <div class="caseStudy">
       <div class="studyImage"style="background-image:url(/assets/controls.png);"></div>
       <div class="studyInfo">
@@ -56,6 +73,11 @@
       </div>
       <div class="studyFooter">
           <p>Product Manager</p>
+          <button class="button open-button">tell me more</button>      
+          <dialog  class="modal">
+            <p>Words and things and shit</p>
+            <button class="button close-button">take me back</button>
+          </dialog>
       </div>
   </div>
 
@@ -64,10 +86,15 @@
     <div class="studyInfo">
       <img class="logo" src="/assets/11FS.png" alt="11:FS">
       <h4>Flavourite </h4>
-      <p>Building a scalable task management tool for operational efficiency.</p>
+      <p>Aggregating menus from the best restaurants, splitting them out by ingredient and making searchable.</p>
     </div>
     <div class="studyFooter">
         <p>Developer</p>
+        <button class="button open-button">tell me more</button>      
+        <dialog class="modal" id="modal2">
+          <p>Words and things and shit</p>
+          <button class="button close-button">take me back</button>
+        </dialog>
     </div>
 </div>
 
@@ -76,10 +103,15 @@
     <div class="studyInfo">
       <img class="logo" src="/assets/11FS.png" alt="11:FS">
       <h4>Leelo </h4>
-      <p>Building a scalable task management tool for operational efficiency.</p>
+      <p>Making climate donations work for both the charity and the donor.</p>
     </div>
     <div class="studyFooter">
         <p>Co-founder</p>
+        <button class="button open-button">tell me more</button>      
+        <dialog class="modal" id="modal3">
+          <p>Words and things and shit</p>
+          <button class="button close-button">take me back</button>
+        </dialog>
     </div>
   </div>
 
@@ -89,21 +121,58 @@
       <div class="studyInfo">
         <img class="logo" src="/assets/11FS.png" alt="11:FS">
         <h4>Userpool </h4>
-        <p>Building a scalable task management tool for operational efficiency.</p>
+        <p>A scalable content machine for 11:FS.</p>
       </div>
       <div class="studyFooter">
         <p>Product Manager</p>
-        <button class="button open-button">open modal</button>      
-          <dialog class="modal">
+        <button class="button open-button">tell me more</button>      
+          <dialog class="modal " id="modal4">
             <p>Words and things and shit</p>
-            <button class="button close-button">close modal</button>
+            <button class="button close-button">take me back</button>
           </dialog>
       </div>
   </div>
+  <script src="js/experience-modal.js"></script>
 </div>
-<script src="./experience-modal.js"></script>
-
+  <!-- Project gallery -->
 </section>
+
+<section>
+  <!-- About me, Why development?, Showcase what you’ve learnt so far-->
+<div class="carousel">
+  <button class="carousel__button carousel__button--left is-hidden">
+    <img src="assets/left.svg" alt="">
+  </button>
+  
+<div class="carousel__track-container">
+<ul class="carousel__track">
+  <li class="carousel__slide current-slide ">
+    <h1 class="carousel__copy">About me</h1>
+  </li>
+  <li class="carousel__slide">
+    <h1 class="carousel__copy">Why development?</h1>
+  </li>
+  <li class="carousel__slide">
+    <h1 class="carousel__copy">What I've learnt</h1>
+  </li>
+</ul>
+</div>
+<button class="carousel__button carousel__button--right">
+  <img src="assets/right.svg" alt="">
+</button>
+  <div class="carousel__nav">
+    <button class="carousel__indicator current-slide"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+  </div>
+</div>
+<script src="js/carousel.js"></script>  
+<!-- About me, Why development?, Showcase what you’ve learnt so far-->
+</section>
+
 </body>
+<footer>
+
+</footer>
 
 </html>

@@ -21,7 +21,6 @@ container.addEventListener("mouseenter", (e)=> {
   title.style.transform = "translateZ(150px)";
   description.style.transform = "translateZ(75px)";
   image.style.transform = "translateZ(100px) rotateZ(360deg)";
-  buttons.style.transform = "translateZ(75px)";
 
 });
 
@@ -33,6 +32,5 @@ container.addEventListener("mouseleave", (e)=> {
   title.style.transform = "translateZ(0px)";
   description.style.transform = "translateZ(0px)";
   image.style.transform = "translateZ(0px)";
-  buttons.style.transform = "translateZ(0px)";
 });
 
