@@ -15,6 +15,7 @@
 
   <!-- Feature -->
   <section class="personalCard">
+    <div class="content content-one">
     <div class="container">
       <div class="card">
         <div class="image">
@@ -33,17 +34,38 @@
     
     <div class="links">
       <div class="social-buttons">
-        <li><a href="https://github.com/JamesSafford" target=”_blank”><i class="fa-brands fa-github"></i> See my work on GitHub</a></li>
-        <li><a href="mailto:jamesfsafford@gmail.com" target=”_blank”><i class="fa-solid fa-envelope"></i> Drop me an email</a></li>
-        <li><a href="https://www.linkedin.com/in/james-safford/" target=”_blank”><i class="fa-brands fa-linkedin-in"> Connect on LinkedIn</i></a></li>
-        <li><a href="https://twitter.com/Jim_Safford" target=”_blank”><i class="fa-brands fa-twitter"></i> Follow me on Twitter</a></li>
+        <a href="https://github.com/JamesSafford" target=”_blank” style="text-decoration:none"> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/github.svg" alt="github" >
+            <h3>See my work on GitHub</h3>
+          </div>
+        </a>
+        <a href="mailto:jamesfsafford@gmail.com" target=”_blank” style="text-decoration:none";> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/email.svg" alt="email">
+            <h3>Drop me an email</h3>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/james-safford/" target=”_blank” style="text-decoration:none"> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/linkedin.svg" alt="linkedin">
+            <h3>Say hello on LinkedIn</h3>
+          </div>
+        </a>
+        <a href="https://twitter.com/Jim_Safford" target=”_blank” style="text-decoration:none"> 
+          <div class="social-card">
+            <img class="social-card-image" src="/assets/twitter.svg" alt="twitter">
+            <h3>Follow me on Twitter</h3>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Project gallery -->
   <section class="experience">
-    <h2>Here's a snapshot of my previous experiences</h2>
+    <div class="content column">
+    <h1 class="title">Here's a snapshot of my previous experiences</h1>
   <div class="work">
     <div class="caseStudy">
       <div class="studyImage" style="background-image:url(/assets/address-history.png);"></div>
@@ -135,9 +157,11 @@
   <script src="js/experience-modal.js"></script>
 </div>
   <!-- Project gallery -->
+</div>
 </section>
 
 <section>
+  <div class="content">
   <!-- About me, Why development?, Showcase what you’ve learnt so far-->
 <div class="carousel">
   <button class="carousel__button carousel__button--left is-hidden">
@@ -168,6 +192,7 @@
 </div>
 <script src="js/carousel.js"></script>  
 <!-- About me, Why development?, Showcase what you’ve learnt so far-->
+</div>
 </section>
 
 </body>
