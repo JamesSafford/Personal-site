@@ -129,7 +129,6 @@ h3 {
   /*if your want to padding */
 }
 
-
 .social-card a {
   text-decoration: none;
 }
@@ -144,6 +143,10 @@ h3 {
 }
 
 /* Case studies */
+
+button {
+  cursor: pointer;
+}
 
 section.experience {
   background: linear-gradient(to right,
@@ -214,6 +217,7 @@ section.experience div.caseStudy p {
   font-size: 16px;
   margin: 0 0 12px 0;
   line-height: 150%;
+  text-align: left;
 }
 
 section.experience div.caseStudy p.meta {
@@ -323,9 +327,21 @@ section.experience div.caseStudy .studyFooter {
 }
 
 .carousel__copy {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .carousel__copy {
+    width: auto;
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel {
+    display: none;
+  }
 }
 
 .carousel__track-container {
@@ -400,11 +416,8 @@ section.experience div.caseStudy .studyFooter {
 
 /* footer */
 footer {
-  background: linear-gradient(to right,
-      rgba(245, 70, 66, 0.75),
-      rgba(8, 83, 156, 0.75));
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 20px;
+  flex-direction: column;
+  padding: 10 10 10 10;
+  text-align: center;
 }
